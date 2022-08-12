@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="InicioMaster.Master.cs" Inherits="PresupuestoFamiliar_HowardJ.InicioMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="desingMaster.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+
+        </div>
+    </form>
+    <br></br>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
