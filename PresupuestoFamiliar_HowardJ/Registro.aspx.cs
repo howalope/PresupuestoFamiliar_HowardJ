@@ -13,5 +13,11 @@ namespace PresupuestoFamiliar_HowardJ
         {
 
         }
+
+        protected void BAgregar_Click(object sender, EventArgs e)
+        {
+            ClsUsuario.setNombre() = TNombre.Text;
+
+        }
     }
 }

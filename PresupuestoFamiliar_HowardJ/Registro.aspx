@@ -38,7 +38,7 @@
             </asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PresupuestoConnectionString %>" SelectCommand="SELECT [Descripcion] FROM [TipoUsuario]"></asp:SqlDataSource>
         </p>
-        <asp:Button ID="BAgregar" runat="server" Height="35px" Text="Registrar Usuario" Width="197px" />
+        <asp:Button ID="BAgregar" runat="server" Height="35px" OnClick="BAgregar_Click" Text="Registrar Usuario" Width="197px" />
     </form>
 </body>
 </html>
