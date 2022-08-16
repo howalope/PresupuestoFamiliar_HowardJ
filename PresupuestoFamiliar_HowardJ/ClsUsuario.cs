@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Data;
+using System.Web.UI;
 
 namespace PresupuestoFamiliar_HowardJ
 {
@@ -10,7 +12,7 @@ namespace PresupuestoFamiliar_HowardJ
     {
 
         private static string email { get; set; }
-        private static string tipoUsuario { get; set; }
+        
         private static string clave { get; set; }
         private static string nombre { get; set; }
         private static string cedula { get; set; }
@@ -18,10 +20,10 @@ namespace PresupuestoFamiliar_HowardJ
 
 
         //Constructor
-        public ClsUsuario (string correo, string tipo, string clav, string nom, string ced, string apell)
+        public ClsUsuario (string correo, string clav, string nom, string ced, string apell)
         {
             email = correo;
-            tipoUsuario = tipo;
+            
             clave = clav;
             nombre = nom;
             cedula = ced;
@@ -30,7 +32,7 @@ namespace PresupuestoFamiliar_HowardJ
         }
 
         public static string GetEmail() { return email; }
-        public static string GetTipoUsuario() { return tipoUsuario; }
+        
         public static string GetClave() { return clave; }
         public static string GetApellido() { return apellido; }
         public static string GetNombre() { return nombre; }
@@ -41,10 +43,7 @@ namespace PresupuestoFamiliar_HowardJ
         {
             email = correo;
         }
-        public static void setTipoUsuario (string tipo)
-        {
-            tipoUsuario = tipo;
-        }
+        
         public static void setClave (string clav)
         {
             clave = clav;
@@ -62,39 +61,41 @@ namespace PresupuestoFamiliar_HowardJ
             cedula = ced;
         }
 
-        public static int RegistroUsuario()
-        {
-            int retorno = 0;
-            int tipo = 0;
-            SqlConnection Conn = new SqlConnection();
+         public static int RegistroUsuario()
+          {
+              int retorno = 0;
+              int tipo = 0;
+              SqlConnection Conn = new SqlConnection();
 
-            try
-            {
-                using (Conn = Clases.DBconn.obtenerConexion())
-                {
-                    SqlCommand cmd = new SqlCommand("Registro", Conn)
-                    {
-                        CommandType = CommandType.StoredProcedure
-                    };
-                    cmd.Parameters.Add(new SqlParameter("@cedula", cedula));
-                    cmd.Parameters.Add(new SqlParameter("@nombre", nombre));
-                    cmd.Parameters.Add(new SqlParameter("@Apellido", apellido));
-                    cmd.Parameters.Add(new SqlParameter("@email", email));
-                    cmd.Parameters.Add(new SqlParameter("@clave", clave));
+              try
+              {
+                  using (Conn = Clases.DBconn.obtenerConexion())
+                  {
+                      SqlCommand cmd = new SqlCommand("Registro", Conn)
+                      {
+                          CommandType = CommandType.StoredProcedure
+                      };
+                      cmd.Parameters.Add(new SqlParameter("@cedula", cedula));
+                      cmd.Parameters.Add(new SqlParameter("@nombre", nombre));
+                      cmd.Parameters.Add(new SqlParameter("@Apellido", apellido));
+                      cmd.Parameters.Add(new SqlParameter("@email", email));
+                      cmd.Parameters.Add(new SqlParameter("@clave", clave));
+                      
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            retorno = 1;
-                        }
-                    }
-                }
-            } catch
-            {
-                retorno = 0;
-            }
+                      {
+                          if (reader.Read())
+                          {
+                              retorno = 1;
+                          }
+                      }
+                  }
+              } catch
+              {
+                    
+              }
 
-        }
+          }
+
     }
 }

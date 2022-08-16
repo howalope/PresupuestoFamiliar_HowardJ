@@ -39,7 +39,7 @@
 					Iniciar Sesión
 				</span>
 
-				<div class="wrap-input100 validate-input m-b-20" data-validate="Ingreseda datos del Usuario">
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Ingrese email del Usuario">
 					
 						<asp:TextBox ID="temail" class="input100" placeholder="Email Usuario" runat="server" ></asp:TextBox>
 					<span class="focus-input100"></span>
@@ -57,13 +57,10 @@
                     <br />
 				    <br />
 				</div>
-
-				<div class="container-login100-form-btn">
-					<asp:Button ID="BRegistrase" class="login100-form-btn" runat="server" Text="Registrarse" OnClick="BRegistrar_Click" />
-				</div>
+				 <p> <a href="index.aspx">¿No tengo cuenta? Registrarse</a></p>
+				
 			</form>
-
-			
+		
 		</div>
 	</div>
 	

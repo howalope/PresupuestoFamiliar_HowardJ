@@ -11,7 +11,7 @@ namespace PresupuestoFamiliar_HowardJ
 {
 
 
-    public partial class Registro
+    public partial class index
     {
 
         /// <summary>
@@ -33,15 +33,6 @@ namespace PresupuestoFamiliar_HowardJ
         protected global::System.Web.UI.WebControls.TextBox TNombre;
 
         /// <summary>
-        /// TCedula control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TCedula;
-
-        /// <summary>
         /// TApellido control.
         /// </summary>
         /// <remarks>
@@ -49,6 +40,15 @@ namespace PresupuestoFamiliar_HowardJ
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TApellido;
+
+        /// <summary>
+        /// TCedula control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TCedula;
 
         /// <summary>
         /// TCorreo1 control.
@@ -69,30 +69,12 @@ namespace PresupuestoFamiliar_HowardJ
         protected global::System.Web.UI.WebControls.TextBox TClave1;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// BRegistrar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-
-        /// <summary>
-        /// SqlDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
-        /// <summary>
-        /// BAgregar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BAgregar;
+        protected global::System.Web.UI.WebControls.Button BRegistrar;
     }
 }

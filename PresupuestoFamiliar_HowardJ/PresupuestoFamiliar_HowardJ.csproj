@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\RegisterDesign.css" />
     <Content Include="desingMaster.css" />
     <Content Include="css\main.css" />
     <Content Include="css\util.css" />
@@ -84,10 +85,10 @@
     <Content Include="images\icons\favicon.ico" />
     <Content Include="images\icons\icon-google.png" />
     <Content Include="images\icons\map-marker.png" />
+    <Content Include="Registro.aspx" />
     <Content Include="js\main.js" />
     <Content Include="js\map-custom.js" />
     <Content Include="menu.aspx" />
-    <Content Include="Registro.aspx" />
     <Content Include="vendor\animate\animate.css" />
     <Content Include="vendor\animsition\css\animsition.css" />
     <Content Include="vendor\animsition\css\animsition.min.css" />
@@ -130,6 +131,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InicioMaster.Master.cs">
       <DependentUpon>InicioMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -149,13 +157,6 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Registro.aspx.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Registro.aspx.designer.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

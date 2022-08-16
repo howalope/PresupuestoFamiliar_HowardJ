@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresupuestoFamiliar_HowardJ", "PresupuestoFamiliar_HowardJ\PresupuestoFamiliar_HowardJ.csproj", "{9A0920DC-2523-45F2-BD08-134A8AA40327}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3D6217F5-61D3-420F-A756-1D9E9FDAEF5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

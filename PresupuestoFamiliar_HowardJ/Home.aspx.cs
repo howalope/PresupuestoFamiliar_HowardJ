@@ -51,7 +51,7 @@ namespace PresupuestoFamiliar_HowardJ
 
         protected void BRegistrar_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("index.aspx");
         }
     }
 }
