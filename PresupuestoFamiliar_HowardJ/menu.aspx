@@ -31,7 +31,18 @@
                 </form>
                 <br />
 
-
+                <div class="income-expense">
+                    <div class="bg-light">
+                        <h4>Flujo Ingreso</h4>
+                        <p class="income" id="income">$0.00</p>
+                    </div>
+                    <div class="income-expense">
+                        <div class="bg-light">
+                        <h4>Flujo Egreso</h4>
+                        <p class="expense" id="expense">$0.00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </body>
     </html>
