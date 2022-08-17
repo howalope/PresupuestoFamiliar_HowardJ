@@ -13,7 +13,7 @@ li {
 
 li a {
         display: block;
-        color: white;
+        color: dodgerblue;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -69,3 +69,32 @@ a {
         color: #eee;
         text-decoration: none;
     }
+
+.form-register {
+    width: 400px;
+    background: #4b2354;
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+    .form-register .botons {
+        width: 100%;
+        background: #4b2354;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 6px 0;
+        font-size: 16px;
+        box-shadow: 7px 13px 37px #000;
+    }
+    .form-register h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    margin-left: 40px;
+}

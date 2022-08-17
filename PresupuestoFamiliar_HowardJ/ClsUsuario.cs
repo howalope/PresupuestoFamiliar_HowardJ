@@ -87,15 +87,17 @@ namespace PresupuestoFamiliar_HowardJ
                           if (reader.Read())
                           {
                               retorno = 1;
-                          }
+                          }    
                       }
                   }
-              } catch
-              {
-                    
-              }
+                
+            } catch (Exception ex)
+            {
+                
+            }
+            return retorno;
 
-          }
+        }
 
     }
 }

@@ -57,7 +57,7 @@
                     <br />
 				    <br />
 				</div>
-				 <p> <a href="index.aspx">¿No tengo cuenta? Registrarse</a></p>
+				 <p> <a href="Registro.aspx">¿No tengo cuenta? Registrarse</a></p>
 				
 			</form>
 		

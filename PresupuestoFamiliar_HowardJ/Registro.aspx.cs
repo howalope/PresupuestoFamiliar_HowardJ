@@ -27,13 +27,15 @@ namespace PresupuestoFamiliar_HowardJ
             
             if (resultado > 0)
             {
-                //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Notify", "alert('Notification: Usuario has sido Registrado')");
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Notify", "alert('Notification: Usuario no ha sido Registrado');", true);
             }
             else
             {
-
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "Notify", "alert('Notification: Usuario ha sido Registrado');", true);
             }
             return;
+
+            Response.Redirect("index.aspx");
         }
     }
 }

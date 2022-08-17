@@ -13,5 +13,11 @@ namespace PresupuestoFamiliar_HowardJ
         {
 
         }
+
+
+        protected void BRegistrar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
