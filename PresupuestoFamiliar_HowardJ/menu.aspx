@@ -32,18 +32,23 @@
                 <br />
 
                 <div class="income-expense">
-                    <div class="bg-light">
+                    <div class="bg-dark">
                         <h4>Flujo Ingreso</h4>
                         <p class="income" id="income">$0.00</p>
                     </div>
-                    <div class="income-expense">
-                        <div class="bg-light">
+                    <div class="bg-dark">
                         <h4>Flujo Egreso</h4>
                         <p class="expense" id="expense">$0.00</p>
-                        </div>
+                    </div>
+                    <div class="bg-dark">
+                        <h4> Balance</h4>
+                        <p id="balance">$0.00</p>
                     </div>
                 </div>
+                <h3>Historial de Transacciones</h3>
+                <ul id="list" class="list"></ul>
             </div>
+            <script src="main.js"></script>
         </body>
     </html>
 </asp:Content>
